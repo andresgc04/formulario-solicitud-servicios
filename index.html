@@ -3,247 +3,266 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>
       Formulario de Solicitud de Servicios - Claro Latinoam&eacute;rica
     </title>
   </head>
   <body>
-    <header>
-      <h1>Solicitud de Servicios - Claro Latinoam&eacute;rica</h1>
-    </header>
+    <section class="contenido">
+      <header>
+        <img
+          id="logoClaro"
+          src="/imagenes/claro-logo.png"
+          alt="Logo de Claro"
+        />
+        <h1>Solicitud de Servicios - Claro Latinoam&eacute;rica</h1>
+      </header>
 
-    <form method="post">
-      <section>
-        <fieldset>
-          <legend>Información Personal:</legend>
+      <form method="post">
+        <section class="form-row">
+          <fieldset>
+            <legend>Información Personal:</legend>
 
-          <label for="primerNombre">Primer Nombre:</label>
-          <input
-            type="text"
-            id="primerNombre"
-            name="primerNombre"
-            placeholder="Primer Nombre."
-          />
+            <label for="primerNombre">Primer Nombre:</label>
+            <input
+              type="text"
+              id="primerNombre"
+              name="primerNombre"
+              placeholder="Primer Nombre."
+            />
 
-          &nbsp;
+            &nbsp;
 
-          <label for="segundoNombre">Segundo Nombre:</label>
-          <input
-            type="text"
-            id="segundoNombre"
-            name="segundoNombre"
-            placeholder="Segundo Nombre."
-          />
+            <label for="segundoNombre">Segundo Nombre:</label>
+            <input
+              type="text"
+              id="segundoNombre"
+              name="segundoNombre"
+              placeholder="Segundo Nombre."
+            />
 
-          &nbsp;
+            &nbsp;
 
-          <label for="primerApellido">Primer Apellido:</label>
-          <input
-            type="text"
-            id="primerApellido"
-            name="primerApellido"
-            placeholder="Primer Apellido."
-          />
+            <label for="primerApellido">Primer Apellido:</label>
+            <input
+              type="text"
+              id="primerApellido"
+              name="primerApellido"
+              placeholder="Primer Apellido."
+            />
 
-          &nbsp;
+            &nbsp;
 
-          <label for="segundoApellido">Segundo Apellido:</label>
-          <input
-            type="text"
-            id="segundoApellido"
-            name="segundoApellido"
-            placeholder="Segundo Apellido."
-          />
+            <label for="segundoApellido">Segundo Apellido:</label>
+            <input
+              type="text"
+              id="segundoApellido"
+              name="segundoApellido"
+              placeholder="Segundo Apellido."
+            />
 
-          <br />
-          <br />
+            <br />
+            <br />
 
-          <label for="sexo">Sexo:</label>
-          <select id="sexo" name="sexo">
-            <option selected disabled>Seleccione el sexo.</option>
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-          </select>
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo">
+              <option selected disabled>Seleccione el sexo.</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+            </select>
 
-          &nbsp;
+            &nbsp;
 
-          <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-          <input type="date" id="fechaNacimiento" name="fechaNacimiento" />
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" />
 
-          &nbsp;
+            &nbsp;
 
-          <label for="paisOrigen">Pa&iacute;s de Origen:</label>
-          <select id="paisOrigen" name="paisOrigen">
-            <option selected disabled>Seleccione el país.</option>
-            <option value="argentina">Argentina</option>
-            <option value="bolivia">Bolivia</option>
-            <option value="brasil">Brasil</option>
-            <option value="chile">Chile</option>
-            <option value="haiti">Hait&iacute;</option>
-            <option value="colombia">Colombia</option>
-            <option value="costa-rica">Costa Rica</option>
-            <option value="cuba">Cuba</option>
-            <option value="ecuador">Ecuador</option>
-            <option value="el-salvador">El Salvador</option>
-            <option value="guatemala">Guatemala</option>
-            <option value="honduras">Honduras</option>
-            <option value="mexico">México</option>
-            <option value="nicaragua">Nicaragua</option>
-            <option value="panama">Panam&aacute;</option>
-            <option value="paraguay">Paraguay</option>
-            <option value="puerto-rico">Puerto Rico</option>
-            <option value="peru">Per&uacute;</option>
-            <option value="republica-dominicana">
-              Rep&uacute;blica Dominicana
-            </option>
-            <option value="uruguay">Uruguay</option>
-            <option value="venezuela">Venezuela</option>
-          </select>
-
-          &nbsp;
-
-          <label for="provincia">Provincia:</label>
-          <select id="provincia" name="provincia">
-            <option selected disabled>Seleccione la provincia.</option>
-            <optgroup label="🌄 Región Norte (Cibao)">
-              <option value="duarte">Duarte</option>
-              <option value="espaillat">Espaillat</option>
-              <option value="hermanas-mirabal">Hermanas Mirabal</option>
-              <option value="la-vega">La Vega</option>
-              <option value="maria-trinidad-sanchez">
-                Mar&iacute;a Trinidad S&aacute;nchez
+            <label for="paisOrigen">Pa&iacute;s de Origen:</label>
+            <select id="paisOrigen" name="paisOrigen">
+              <option selected disabled>Seleccione el país.</option>
+              <option value="argentina">Argentina</option>
+              <option value="bolivia">Bolivia</option>
+              <option value="brasil">Brasil</option>
+              <option value="chile">Chile</option>
+              <option value="haiti">Hait&iacute;</option>
+              <option value="colombia">Colombia</option>
+              <option value="costa-rica">Costa Rica</option>
+              <option value="cuba">Cuba</option>
+              <option value="ecuador">Ecuador</option>
+              <option value="el-salvador">El Salvador</option>
+              <option value="guatemala">Guatemala</option>
+              <option value="honduras">Honduras</option>
+              <option value="mexico">México</option>
+              <option value="nicaragua">Nicaragua</option>
+              <option value="panama">Panam&aacute;</option>
+              <option value="paraguay">Paraguay</option>
+              <option value="puerto-rico">Puerto Rico</option>
+              <option value="peru">Per&uacute;</option>
+              <option value="republica-dominicana">
+                Rep&uacute;blica Dominicana
               </option>
-              <option value="monseñor-nouel">Monseñor Nouel</option>
-              <option value="monte-cristi">Monte Cristi</option>
-              <option value="puerto-plata">Puerto Plata</option>
-              <option value="samana">Saman&aacute;</option>
-              <option value="sanchez-ramirez">
-                S&aacute;nchez Ram&iacute;rez
-              </option>
-              <option value="santiago">Santiago</option>
-              <option value="santiago-rodriguez">
-                Santiago Rodr&iacute;guez
-              </option>
-              <option value="valverde">Valverde</option>
-            </optgroup>
-            <optgroup label="🌅 Región Sur">
-              <option value="azua">Azua</option>
-              <option value="bahoruco">Bahoruco</option>
-              <option value="barahona">Barahona</option>
-              <option value="dajabon">Dajab&oacute;n</option>
-              <option value="elias-piña">El&iacute;as Piña</option>
-              <option value="independencia">Independencia</option>
-              <option value="pedernales">Pedernales</option>
-              <option value="peravia">Peravia</option>
-              <option value="san-cristobal">San Crist&oacute;bal</option>
-              <option value="san-jose-de-ocoa">San Jos&eacute; de Ocoa</option>
-              <option value="san-juan">San Juan</option>
-            </optgroup>
-            <optgroup label="🌴 Región Este">
-              <option value="el-seibo">El Seibo</option>
-              <option value="hato-mayor">Hato Mayor</option>
-              <option value="la-altagracia">La Altagracia</option>
-              <option value="la-romana">La Romana</option>
-              <option value="monte-plata">Monte Plata</option>
-              <option value="san-pedro-de-macoris">
-                San Pedro de Macor&iacute;s
-              </option>
-            </optgroup>
-            <optgroup label="🏙️ Distrito Nacional">
-              <option value="distrito-nacional">Distrito Nacional</option>
-            </optgroup>
-          </select>
+              <option value="uruguay">Uruguay</option>
+              <option value="venezuela">Venezuela</option>
+            </select>
 
-          <br />
-          <br />
+            &nbsp;
 
-          <label for="ciudadNacimiento">Ciudad de Nacimiento:</label>
-          <input type="text" id="ciudadNacimiento" name="ciudadNacimiento" />
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+              <option selected disabled>Seleccione la provincia.</option>
+              <optgroup label="🌄 Región Norte (Cibao)">
+                <option value="duarte">Duarte</option>
+                <option value="espaillat">Espaillat</option>
+                <option value="hermanas-mirabal">Hermanas Mirabal</option>
+                <option value="la-vega">La Vega</option>
+                <option value="maria-trinidad-sanchez">
+                  Mar&iacute;a Trinidad S&aacute;nchez
+                </option>
+                <option value="monseñor-nouel">Monseñor Nouel</option>
+                <option value="monte-cristi">Monte Cristi</option>
+                <option value="puerto-plata">Puerto Plata</option>
+                <option value="samana">Saman&aacute;</option>
+                <option value="sanchez-ramirez">
+                  S&aacute;nchez Ram&iacute;rez
+                </option>
+                <option value="santiago">Santiago</option>
+                <option value="santiago-rodriguez">
+                  Santiago Rodr&iacute;guez
+                </option>
+                <option value="valverde">Valverde</option>
+              </optgroup>
+              <optgroup label="🌅 Región Sur">
+                <option value="azua">Azua</option>
+                <option value="bahoruco">Bahoruco</option>
+                <option value="barahona">Barahona</option>
+                <option value="dajabon">Dajab&oacute;n</option>
+                <option value="elias-piña">El&iacute;as Piña</option>
+                <option value="independencia">Independencia</option>
+                <option value="pedernales">Pedernales</option>
+                <option value="peravia">Peravia</option>
+                <option value="san-cristobal">San Crist&oacute;bal</option>
+                <option value="san-jose-de-ocoa">
+                  San Jos&eacute; de Ocoa
+                </option>
+                <option value="san-juan">San Juan</option>
+              </optgroup>
+              <optgroup label="🌴 Región Este">
+                <option value="el-seibo">El Seibo</option>
+                <option value="hato-mayor">Hato Mayor</option>
+                <option value="la-altagracia">La Altagracia</option>
+                <option value="la-romana">La Romana</option>
+                <option value="monte-plata">Monte Plata</option>
+                <option value="san-pedro-de-macoris">
+                  San Pedro de Macor&iacute;s
+                </option>
+              </optgroup>
+              <optgroup label="🏙️ Distrito Nacional">
+                <option value="distrito-nacional">Distrito Nacional</option>
+              </optgroup>
+            </select>
 
-          &nbsp;
+            <br />
+            <br />
 
-          <label for="estadoCivil">Estado Civil:</label>
-          <select id="estadoCivil" name="estadoCivil">
-            <option selected disabled>Seleccione el estado civil.</option>
-            <option value="soltero(a)">Soltero(a)</option>
-            <option value="casado(a)">Casado(a)</option>
-            <option value="divorciado(a)">Divorciado(a)</option>
-            <option value="viudo(a)">Viudo(a)</option>
-          </select>
+            <label for="ciudadNacimiento">Ciudad de Nacimiento:</label>
+            <input type="text" id="ciudadNacimiento" name="ciudadNacimiento" />
 
-          &nbsp;
+            &nbsp;
 
-          <label for="numeroCedula">N&uacute;mero de C&eacute;dula:</label>
-          <input type="text" id="numeroCedula" name="numeroCedula" />
-        </fieldset>
-      </section>
+            <label for="estadoCivil">Estado Civil:</label>
+            <select id="estadoCivil" name="estadoCivil">
+              <option selected disabled>Seleccione el estado civil.</option>
+              <option value="soltero(a)">Soltero(a)</option>
+              <option value="casado(a)">Casado(a)</option>
+              <option value="divorciado(a)">Divorciado(a)</option>
+              <option value="viudo(a)">Viudo(a)</option>
+            </select>
 
-      <br />
+            &nbsp;
 
-      <section>
-        <fieldset>
-          <legend>Contacto:</legend>
-
-          <label for="numeroCelular">N&uacute;mero de Celular:</label>
-          <input type="tel" id="numeroCelular" name="numeroCelular" />
-
-          &nbsp;
-
-          <label for="telefonoTrabajo">T&eacute;lefono del Trabajo:</label>
-          <input type="tel" id="telefonoTrabajo" name="telefonoTrabajo" />
-
-          &nbsp;
-
-          <label for="correoElectronico">Correo Electr&oacute;nico:</label>
-          <input type="tel" id="correoElectronico" name="correoElectronico" />
-        </fieldset>
+            <label for="numeroCedula">N&uacute;mero de C&eacute;dula:</label>
+            <input type="text" id="numeroCedula" name="numeroCedula" />
+          </fieldset>
+        </section>
 
         <br />
 
-        <fieldset>
-          <legend>Solicitud:</legend>
+        <section class="form-row">
+          <fieldset>
+            <legend>Contacto:</legend>
 
-          <p>Servicio a Solicitar:</p>
-          <input
-            type="radio"
-            id="internetMovil"
-            name="servicios"
-            value="internet-movil"
-          />
-          <label for="internetMovil">Internet Movil</label>
-          <input
-            type="radio"
-            id="internetFijo"
-            name="servicios"
-            value="internet-fijo"
-          />
-          <label for="internetFijo">Internet Fijo</label>
-          <input
-            type="radio"
-            id="fibraOptica"
-            name="servicios"
-            value="fibra-optica"
-          />
-          <label for="fibraOptica">Fibra &Oacute;ptica</label>
+            <label for="numeroCelular">N&uacute;mero de Celular:</label>
+            <input type="tel" id="numeroCelular" name="numeroCelular" />
+
+            &nbsp;
+
+            <label for="telefonoTrabajo">T&eacute;lefono del Trabajo:</label>
+            <input type="tel" id="telefonoTrabajo" name="telefonoTrabajo" />
+
+            &nbsp;
+
+            <label for="correoElectronico">Correo Electr&oacute;nico:</label>
+            <input
+              type="email"
+              id="correoElectronico"
+              name="correoElectronico"
+            />
+          </fieldset>
 
           <br />
+
+          <fieldset>
+            <legend>Solicitud:</legend>
+
+            <p>Servicio a Solicitar:</p>
+            <input
+              type="radio"
+              id="internetMovil"
+              name="servicios"
+              value="internet-movil"
+            />
+            <label for="internetMovil">Internet Movil</label>
+            <input
+              type="radio"
+              id="internetFijo"
+              name="servicios"
+              value="internet-fijo"
+            />
+            <label for="internetFijo">Internet Fijo</label>
+            <input
+              type="radio"
+              id="fibraOptica"
+              name="servicios"
+              value="fibra-optica"
+            />
+            <label for="fibraOptica">Fibra &Oacute;ptica</label>
+
+            <br />
+            <br />
+
+            <label for="imagen">Subir imagen:</label>
+            <input type="file" id="imagen" name="imagen" />
+
+            <br />
+            <br />
+
+            <label for="comentarios">Comentarios u Observaciones:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+          </fieldset>
+
           <br />
+        </section>
 
-          <label for="imagen">Subir imagen:</label>
-          <input type="file" id="imagen" name="imagen" />
-
-          <br />
-          <br />
-
-          <label for="comentarios">Comentarios u Observaciones:</label>
-          <textarea id="comentarios" name="comentarios" rows="4"></textarea>
-        </fieldset>
-
-        <br />
-
-        <button type="submit" id="guardarSolicitud">Enviar</button>
-        <button type="button" id="limpiarSolicitud">Limpiar</button>
-      </section>
-    </form>
+        <section id="buttons">
+          <button type="submit" id="guardarSolicitud">Enviar</button>
+          <button type="button" id="limpiarSolicitud">Limpiar</button>
+        </section>
+      </form>
+    </section>
+    <footer>
+      <p>© Todos los derechos reservados, Claro 2025</p>
+    </footer>
   </body>
 </html>

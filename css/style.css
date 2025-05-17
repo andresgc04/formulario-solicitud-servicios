@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido {
+  flex: 1;
+}
+
+header {
+  background-color: #d5392e;
+  padding: 15px 30px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > h1 {
+  color: white;
+  text-align: center;
+}
+
+#logoClaro {
+  height: 100px;
+  width: 100px;
+}
+
+form {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-row {
+  gap: 5px;
+}
+
+fieldset {
+  padding: 15px;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #d5392e;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #b32d24;
+}
+
+footer {
+  background-color: #d5392e;
+  padding: 25px 50px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
